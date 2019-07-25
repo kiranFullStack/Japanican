@@ -19,5 +19,5 @@ export default function ListItem(props) {
 }
 
 ListItem.propTypes = {
-  item: PropTypes.object
+  item: PropTypes.object.isRequired
 }
