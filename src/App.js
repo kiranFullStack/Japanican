@@ -2,7 +2,8 @@ import React, { Fragment } from "react"
 import "./App.scss"
 
 function App() {
-  const name = "st"
+  const name = "staaaaaaa"
+  const shouldYouShowName = false
   return (
     <Fragment>
       <h1>Japanican Mobile and App</h1>
@@ -19,6 +20,7 @@ function App() {
       ) : (
         <h1>{name.toLowerCase()}</h1>
       )}
+      {shouldYouShowName && name}
     </Fragment>
   )
 }
