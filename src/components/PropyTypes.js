@@ -1,25 +1,17 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React, { useState } from "react"
+// import PropTypes from "prop-types"
 
-export default function PropyTypes(props) {
+export default function PropyTypes() {
+  const [someState, setSomeState] = useState({
+    name: "someName",
+    title: "someTitle",
+    number: 22
+  })
   return (
     <div>
-      <h1>Coming form proptype comp . </h1>
-      <h1>Prop is = {props.name}</h1>
-      <h1>Num prop is = {props.number}</h1>
-
-      <h1>{props.another}</h1>
+      <h1>{someState.name}</h1>
+      <h1>{someState.title}</h1>
+      <h1>{someState.number}</h1>
     </div>
   )
-}
-
-PropyTypes.defaultProps = {
-  name: "Default prop",
-  number: 666
-}
-
-PropyTypes.propTypes = {
-  name: PropTypes.string,
-  number: PropTypes.number,
-  another: PropTypes.string.isRequired
 }
