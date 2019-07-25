@@ -6,7 +6,7 @@ function App() {
   return (
     <Fragment>
       {/* <PropyTypes name="Kiran prop" number="27" /> */}
-      <PropyTypes />
+      <PropyTypes another="string" />
     </Fragment>
   )
 }
