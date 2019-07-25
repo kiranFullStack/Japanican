@@ -2,7 +2,7 @@ import React, { Fragment } from "react"
 import "./App.scss"
 
 function App() {
-  const name = ""
+  const name = "st"
   return (
     <Fragment>
       <h1>Japanican Mobile and App</h1>
@@ -14,7 +14,11 @@ function App() {
       <h3>Get request</h3>
       <h3>Search</h3>
       <h3>Sort</h3>
-      <h1>{name.length > 1 ? "greater than 1" : "less than 1"}</h1>
+      {name.length > 3 ? (
+        <h1>{name.toUpperCase()}</h1>
+      ) : (
+        <h1>{name.toLowerCase()}</h1>
+      )}
     </Fragment>
   )
 }
