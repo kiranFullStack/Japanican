@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from "react"
 // import PropTypes from "prop-types"
 
-export default function PropyTypes() {
+export default function Lists() {
   const [someState, setSomeState] = useState([
     {
       id: 1,
@@ -238,10 +238,19 @@ export default function PropyTypes() {
     <Fragment>
       <h1>List loop through json array</h1>
       {someState.map(item => (
-        <Fragment>
+        <div
+          style={{
+            boxShadow: "0px 4px 6px #A0A0A0",
+            padding: "10px",
+            margin: "24px"
+          }}
+          key={item.id}
+        >
           <h3>{item.name}</h3>
-          <h3>{item.name}</h3> <h3>{item.name}</h3> <h3>{item.name}</h3>
-        </Fragment>
+          <h3>{item.email}</h3>
+          <h3>{item.phone}</h3>
+          <h3>{item.website}</h3>
+        </div>
       ))}
     </Fragment>
   )
