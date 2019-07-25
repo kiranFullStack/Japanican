@@ -18,4 +18,6 @@ export default function ListItem(props) {
   )
 }
 
-ListItem.propTypes = {}
+ListItem.propTypes = {
+  item: PropTypes.object
+}

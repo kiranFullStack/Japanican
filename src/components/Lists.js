@@ -1,5 +1,4 @@
 import React, { useState, Fragment } from "react"
-// import PropTypes from "prop-types"
 import ListItem from "./ListItem"
 
 export default function Lists() {
@@ -238,9 +237,17 @@ export default function Lists() {
   return (
     <Fragment>
       <h1>List loop through json array</h1>
-      {someState.map(item => (
-        <ListItem key={item.id} item={item} />
-      ))}
+      <div style={grid}>
+        {someState.map(item => (
+          <ListItem key={item.id} item={item} />
+        ))}
+      </div>
     </Fragment>
   )
+}
+
+const grid = {
+  display: "grid",
+  gridTemplateColumns: "repeat(2,1fr)",
+  gridGap: "10px"
 }
