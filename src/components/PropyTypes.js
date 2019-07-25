@@ -13,5 +13,10 @@ export default function PropyTypes(props) {
 
 PropyTypes.defaultProps = {
   name: "Default prop",
-  number: 22
+  number: "name"
+}
+
+PropyTypes.propTypes = {
+  name: PropTypes.string,
+  number: PropTypes.number
 }
